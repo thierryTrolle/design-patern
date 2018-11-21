@@ -2,6 +2,11 @@ package org.tt.designpattern.composite;
 
 import java.awt.Color;
 
+import org.tt.designpattern.composite.shape.Circle;
+import org.tt.designpattern.composite.shape.CompoundShape;
+import org.tt.designpattern.composite.shape.Dot;
+import org.tt.designpattern.composite.shape.Rectangle;
+
 public class demoComposite {
 	
 	 public static void main(String[] args) {

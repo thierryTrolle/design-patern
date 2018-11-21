@@ -1,4 +1,4 @@
-package org.tt.designpattern.composite;
+package org.tt.designpattern.composite.shape;
 
 import java.awt.Graphics;
 

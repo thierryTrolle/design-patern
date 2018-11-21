@@ -12,6 +12,9 @@ import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 import javax.swing.border.Border;
 
+import org.tt.designpattern.composite.shape.CompoundShape;
+import org.tt.designpattern.composite.shape.Shape;
+
 public class ImageEditor {
 	 private EditorCanvas canvas;
 	    private CompoundShape allShapes = new CompoundShape();
