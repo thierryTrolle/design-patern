@@ -1,8 +1,12 @@
 # Design pattern JAVA 
 
-Repo base de co sur le modele de conception.
+Repo base de connaissance sur le modele de conception.
 
-Chaque modele est imagé par un exemple.
+Chaque modele de conception est imagé par un exemple.
+
+## Adapter ou Wrapper
+> Adpatation d'un systeme pour un autre système, L’objectif du pattern ADAPTER est de fournir l’interface qu’un client attend en utilisant les services d’une classe dont l’interface est différente et permettre à des classes de fonctionner ensemble, ce qui n'aurait pas été possible sinon (à cause de leurs interfaces incompatibles).
+Dans notre exemple, on a le fonctionnement standart representé par l'interface **Standard** et le client souhaite utiliser **ImplAdapte** pour utiliser les fonctionnalités. Il y a 2 facons de proceder soit par composition **AdapteurByComposition** soit heriter de **ImplAdapte** et implementer l'interface Standard pour redefinir les méthodes avec l'ancien systeme.
 
 ## Bridge ou driver
 > Permet de faire un pont entre un systeme et un sous système qui ont des comportement communs. L'objectif est de decoupler une abstraction(interface/classe abstraite) de l'implémentation de ses opérations abstraites, permettant ainsi à l'abstraction et à son implementation de varier independament.   
