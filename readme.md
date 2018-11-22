@@ -18,6 +18,9 @@ On souhaite gérer par une seule classe les device*(decoupler l'abstraction)*, o
 >Permet de gerer des entités qui sont constituées(composées/composite) par 1 **ou** un groupe d'objet. L'objectif est du pattern COMPOSITE est de permettre au client(l'appelant) de traiter de facon uniforme des objets individuels et des compositions d'objet. Exemple un dossier peut etre constitué d'un dossier et de fichier.
 Dans l'exemple du projet on a des formes representé par l'interface Shape qui represente une abstraction de rectangle, dot... Image editor va gerer uniformement une shape ou un groupe de shape représenté ici par **CompoundShape**(la fameuse classe composite qui contient une liste des entités. Exemple supplémentatire dans [https://smeric.developpez.com/java/uml/composite](https://smeric.developpez.com/java/uml/composite)
 
+## Singleton 
+>Permet de creer une instance unique, permet la gestion unique d'une ressource. Il y a 2 maniere de gerer un singleton en créant le singleton au demarage ou en lazy si la ressource peut ne pas etre appelée. Dans le cas d'un chargement paresseux il y a un risque de conflit dans un environnement multi-threadé à l'instanciation.Pour resoudre ce conflit on utilise la technique holder qui est la solution la plus optimisé et la moins couteuse car static. Il reste qu'une instance d'un singleton puisse etre instancier par introspection ou deserialisation [explication](http://blog.paumard.org/2011/04/22/bilan-sur-le-pattern-singleton/).  
+
 
 
  
