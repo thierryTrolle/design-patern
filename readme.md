@@ -21,6 +21,10 @@ Dans l'exemple du projet on a des formes representé par l'interface Shape qui r
 ## Singleton 
 >Permet de creer une instance unique, permet la gestion unique d'une ressource. Il y a 2 maniere de gerer un singleton en créant le singleton au demarage ou en lazy si la ressource peut ne pas etre appelée. Dans le cas d'un chargement paresseux il y a un risque de conflit dans un environnement multi-threadé à l'instanciation.Pour resoudre ce conflit on utilise la technique holder qui est la solution la plus optimisé et la moins couteuse car static. Il reste qu'une instance d'un singleton puisse etre instancié par introspection ou deserialisation [explication](http://blog.paumard.org/2011/04/22/bilan-sur-le-pattern-singleton/).  
 
+## Mediator
+> Permet de gérer la transmission d'informations entre des objets interagissant entre eux avec un couplage faible entre les objets puisqu'ils n'ont pas de lien direct entre eux. Pouvoir varier leur interaction indépendamment. Dans notre exemple on a des **Collegue** qui souhaite echanger de l'information, di ils communiquent entres eux directement il y a un couplage fort, une classe dédié à la communication **Mediateur** permet d'eviter cela.
+
+
 
 
  
